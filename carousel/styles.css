@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0px);
+  transition: 1.2s ease;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 35%;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  opacity: none;
+}
+
+.arrowLeft {
+  position: absolute;
+  bottom: auto;
+  left: 0px;
+  top: 100px;
+  z-index: 1;
+  font-size: 70px;
+  opacity: 0.7;
+  width: 100px;
+}
+
+.arrowRight {
+  position: absolute;
+  bottom: auto;
+  left: 360px;
+  top: 100px;
+  z-index: 1;
+  font-size: 70px;
+  opacity: 0.7;
+  width: 100px;
+}
+
+#clickArrowRight:hover {
+  color: ivory;
+  transition: 0.5s ease-in;
+}
+
+#clickArrowLeft:hover {
+  color: ivory;
+  transition: 0.5s ease-in;
+}

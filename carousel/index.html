@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Carousel</title>
+</head>
+<body>
+    <div class="carousel">
+        <div class = "carouselCase">
+            <div class="arrowRight"><a id = "clickArrowRight"><i class="fas fa-angle-right next"></i></a></div>
+            <div class="arrowLeft"><a  id = "clickArrowLeft"><i class="fas fa-angle-left previous"></i></a></div>
+            <div class="image-container" id="imgs">
+                <img src="imgs/paris.webp" alt="" width = 400>
+                <img src="imgs/berlin.webp" alt="" width = 400>
+                <img src="imgs/barcelona.webp" alt="" width = 400>
+                <img src="imgs/budapest.webp" alt="" width = 400>
+            </div>
+        </div>
+        <div class="buttons-container"></div>
+            <button id="left" class="btn">Previous</button>
+            <button id="right" class="btn">Next</button>
+        </div>
+    </div>
+
+<script src = "script.js"></script>
+</body>
+</html>
